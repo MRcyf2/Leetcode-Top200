@@ -3,7 +3,7 @@
 ## 题单
 
 | No.    |  Title  |  Solution  |  Difficulty |
-|--------|----------|--------|--------|--------|
+|--------|---------|--------|--------|
 |0001|Two Sum|[两数之和](https://github.com/MRcyf2/Leetcode-Top200/blob/main/no.1%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.py) |Easy|
 |0002|Add Two Numbers|none|Medium|
 |0003|Longest Substring Without Repeating Characters|none|Medium|

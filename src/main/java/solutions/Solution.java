@@ -106,7 +106,7 @@ public class Solution {
         }
     }
     //|0004|Median of Two Sorted Arrays|none|Hard|
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public double findMedianSortedArrays(int[] nums1,int[] nums2) {
         int totalLength= nums1.length+nums2.length;
         if((totalLength&1)==0){//偶数
             int mid1=getKthData(nums1,nums2,totalLength>>1);

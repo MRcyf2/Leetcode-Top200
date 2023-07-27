@@ -7,7 +7,6 @@
     <list default="true" id="586090c8-f15e-42c7-8079-ff20c0a01af1" name="更改" comment="kary的题目">
       <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/no.1两数之和.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/solutions/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/solutions/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690425273474</updated>
-      <workItem from="1690425274498" duration="4385000" />
+      <workItem from="1690425274498" duration="4595000" />
     </task>
     <task id="LOCAL-00001" summary="kary的题目">
       <option name="closed" value="true" />
@@ -90,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690425892433</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="kary的题目">
+      <option name="closed" value="true" />
+      <created>1690429682254</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690429682254</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

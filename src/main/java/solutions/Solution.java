@@ -155,7 +155,7 @@ public class Solution {
     public String convert(String s, int numRows) {
         if(numRows==1) return s;
         int mod=2*numRows-2;
-        StringBuffer resBuff=new StringBuffer();
+        StringBuilder resBuff=new StringBuilder();
         for(int base=0;base<=numRows-1;++base)
         {
             for(int i=base;i<s.length();i+=mod)

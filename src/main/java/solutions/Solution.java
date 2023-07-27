@@ -116,4 +116,39 @@ public class Solution {
             return getKthData(nums1,nums2,(totalLength>>1)+1);
         }
     }
+    //|0005|Longest Palindromic Substring|none|Medium|
+    public String longestPalindrome(String s) {
+        if(s.length()==1) return s;
+        int sLength=s.length();
+        int startIndex=0,endIndex=0;
+        int maxLength=1;
+        boolean[][] isPal=new boolean[sLength][sLength];
+        for (int i = 0; i < sLength; i++) {
+            isPal[i][i]=true;
+        }
+        for (int L = 2; L <= sLength; L++) {
+            for (int i = 0; i < sLength; i++) {
+                int j=i+L-1;
+                if(j>=sLength) break;
+                char charAti=s.charAt(i);
+                char charAtj=s.charAt(j);
+                if(charAti==charAtj){
+                    if(L==2){
+                        isPal[i][j]=true;
+                        if(L>maxLength){
+                            maxLength=L;
+                            startIndex=i;endIndex=j;
+                        }
+                    }else{
+                        isPal[i][j]=isPal[i+1][j-1];
+                        if(isPal[i][j]&&L>maxLength){
+                            maxLength=L;
+                            startIndex=i;endIndex=j;
+                        }
+                    }
+                }
+            }
+        }
+        return s.substring(startIndex,endIndex+1);
+    }
 }

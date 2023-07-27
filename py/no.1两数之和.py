@@ -1,12 +1,12 @@
 '''
-Author: ccaiyf 496357312@qq.com
-Date: 2023-07-26 14:26:59
-LastEditors: ccaiyf 496357312@qq.com
-LastEditTime: 2023-07-26 14:41:50
-Description: QQ:496357312
+Author: ccyfifi
+Date: 2023-07-27 11:06:04
+LastEditors: ccaiyf 
+LastEditTime: 2023-07-27 15:12:56
+Description: QQ:496357312欢迎交流
 
-Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
 '''
+
 
 
 

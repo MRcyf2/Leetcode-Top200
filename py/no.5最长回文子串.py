@@ -2,11 +2,8 @@
 Author: ccaiyf 496357312@qq.com
 Date: 2023-07-27 14:48:05
 LastEditors: ccaiyf 496357312@qq.com
-LastEditTime: 2023-07-27 14:48:49
-FilePath: \Leetcode-Top200\Leetcode-Top200\py\no.5.py
+LastEditTime: 2023-07-27 15:04:49
 Description: QQ:496357312
-
-Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
 '''
 #5. 最长回文子串
 class Solution:

@@ -151,4 +151,21 @@ public class Solution {
         }
         return s.substring(startIndex,endIndex+1);
     }
+    //|0006|Zigzag Conversion|none|Medium|
+    public String convert(String s, int numRows) {
+        if(numRows==1) return s;
+        int mod=2*numRows-2;
+        StringBuffer resBuff=new StringBuffer();
+        for(int base=0;base<=numRows-1;++base)
+        {
+            for(int i=base;i<s.length();i+=mod)
+            {
+                int i2=i+mod-2*(i%mod);
+                resBuff.append(s.charAt(i));
+                if(i2<s.length()&&(i2)%mod!=0&&i!=i2)
+                    resBuff.append(s.charAt(i2));
+            }
+        }
+        return resBuff.toString();
+    }
 }

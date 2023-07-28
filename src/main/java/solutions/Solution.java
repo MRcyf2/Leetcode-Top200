@@ -247,6 +247,7 @@ public class Solution {
         if(c2=='.') return true;
         return c1==c2;
     }
+    //|0010|Regular Expression Matching|none|Hard|
     public boolean isMatch(String s, String p) {
         boolean[][] matches=new boolean[s.length()+1][p.length()+1];
         matches[0][0]=true;

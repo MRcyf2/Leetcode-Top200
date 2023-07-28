@@ -180,4 +180,67 @@ public class Solution {
         }
         return res;
     }
+    //|0008|String to Integer (atoi)|none|Medium|
+    public int myAtoi(String s) {
+        if(s.equals("")) return 0;
+        int start=0;
+        while(s.charAt(start)==' '){
+            start+=1;
+            if(start>=s.length()){
+                return 0;
+            }
+        }
+        int negOrPos=1;
+        if(s.charAt(start)=='-'){
+            negOrPos=-1;
+            start+=1;
+            if(start>=s.length()){
+                return 0;
+            }
+        } else if (s.charAt(start)=='+') {
+            negOrPos=1;
+            start+=1;
+            if(start>=s.length()){
+                return 0;
+            }
+        }
+        int end=start;
+        char charEnd=s.charAt(end);
+        while(charEnd>='0'&&charEnd<='9'){
+            end+=1;
+            if(end>=s.length()){
+                break;
+            }
+            charEnd=s.charAt(end);
+        }
+        end-=1;
+        long res=0;
+        for(int i=start;i<=end;i++){
+            int bit=s.charAt(i)-'0';
+            res=res*10+bit;
+            if(res>Integer.MAX_VALUE){
+                return (negOrPos==1)?Integer.MAX_VALUE:Integer.MIN_VALUE;
+            }
+        }
+        return (int) (res*negOrPos);
+    }
+    //|0009|Palindrome Number|none|Easy|
+    public boolean isPalindrome(int x) {
+        if(x<0) return false;
+        int posPower=1;
+        while(posPower*10!=1410065408&&x/(posPower*10)!=0){
+            posPower*=10;
+        }
+        int negPower=1;
+        while(posPower>negPower){
+            int posBit=(x/posPower)%10;
+            int negBit=(x/negPower)%10;
+            if(posBit!=negBit){
+                return false;
+            }
+            posPower/=10;
+            negPower*=10;
+        }
+        return true;
+    }
 }

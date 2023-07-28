@@ -34,3 +34,16 @@ def manacher(s):
         if i+a>r:
             mid,r=i,i+a
     return B[1:-1]#回文半径个数
+
+
+#############################################################
+
+#z函数
+def z(s):
+    n=len(s)
+    z, l, r = [0]*n, 0, 0
+    for i in range(1, n):
+        z[i]=max(min(z[i-l], r-i+1), 0)#z[i-l]:i在l-r内，i的z值
+        while i+z[i]<n and s[z[i]]==s[i+z[i]]:
+            l, r, z[i] = i, i+z[i], z[i]+1
+    return z

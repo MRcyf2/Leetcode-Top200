@@ -243,4 +243,27 @@ public class Solution {
         }
         return true;
     }
+    private boolean charIsMatch(char c1, char c2){
+        if(c2=='.') return true;
+        return c1==c2;
+    }
+    public boolean isMatch(String s, String p) {
+        boolean[][] matches=new boolean[s.length()+1][p.length()+1];
+        matches[0][0]=true;
+        for (int i = 0; i <= s.length(); i++) {
+            for (int j = 1; j <= p.length(); j++) {
+                if(p.charAt(j-1)!='*'){
+                    if(i>=1&&charIsMatch(s.charAt(i-1),p.charAt(j-1))){
+                        matches[i][j]=matches[i-1][j-1];
+                    }
+                }else {
+                   matches[i][j]=matches[i][j-2];
+                    if(i>=1&&charIsMatch(s.charAt(i-1),p.charAt(j-2))){
+                        matches[i][j]|=matches[i-1][j];
+                    }
+                }
+            }
+        }
+        return matches[s.length()][p.length()];
+    }
 }

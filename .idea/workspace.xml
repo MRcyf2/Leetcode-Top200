@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="586090c8-f15e-42c7-8079-ff20c0a01af1" name="更改" comment="kary的题目">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/no.1两数之和.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/solutions/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/solutions/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +78,7 @@
       <workItem from="1690425274498" duration="4595000" />
       <workItem from="1690429907943" duration="1018000" />
       <workItem from="1690430946767" duration="1418000" />
-      <workItem from="1690511076277" duration="2605000" />
+      <workItem from="1690511076277" duration="5822000" />
     </task>
     <task id="LOCAL-00001" summary="kary的题目">
       <option name="closed" value="true" />
@@ -178,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690431288580</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="kary的题目">
+      <option name="closed" value="true" />
+      <created>1690513737562</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690513737562</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,5 +211,13 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="pattern.charAt(j)" language="JAVA" />
+        <watch expression="s.charAt(i)" language="JAVA" />
+        <watch expression="pattern.toString()" language="JAVA" />
+        <watch expression="symbol" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
